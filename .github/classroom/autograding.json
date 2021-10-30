@@ -12,7 +12,7 @@
     },
     {
       "name": "Output test",
-      "setup": "g++ bask2.cpp -o task2",
+      "setup": "g++ *2.cpp -o task2",
       "run": "./task2",
       "input": "3",
       "output": "4 3",
