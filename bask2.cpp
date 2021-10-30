@@ -7,7 +7,7 @@ int main()
 	int num;
 	cin >> num;
 
-	cout << num + 1 << "aba caba" << num << endl;
+	cout << num + 1 << " aba caba " << num << endl;
 
 	return 0;
 }
