@@ -10,6 +10,7 @@ int main()
 
 	char prev_symbol = 0;
 	cin >> prev_symbol;
+	
 	bool is_ordered = true;
 	if(prev_symbol >= 'A' && prev_symbol <= 'Z') prev_symbol -= 'A' - 'a';
 
@@ -20,7 +21,7 @@ int main()
 		if(symbol >= 'A' && symbol <= 'Z') symbol -= 'A' - 'a';
 
 		if(symbol < prev_symbol) is_ordered = false;
-		
+
 		prev_symbol = symbol;
 	}
 

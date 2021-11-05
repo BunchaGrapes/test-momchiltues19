@@ -21,18 +21,17 @@ int main()
 	{
 		if(i == 0) 
 			for(int k = 0; k < END_ROWS_COUNT; k++) cout << symbol;
-		else if(i == rows_count)
-		{
-			for(int k = 0; k < rows_count; k++) cout << " ";
-			for(int k = 0; k < middle_size; k++) cout << symbol;
-			for(int k = 0; k < rows_count; k++) cout << " ";
-			is_top = false;
-		}
 		else
 		{
 			for(int k = 0; k < i; k++) cout << " ";
 			cout << symbol;
-			for(int k = 0; k < END_ROWS_COUNT - 2*(i+1); k++) cout << " ";
+			if(i == rows_count)
+			{
+				for(int k = 0; k < END_ROWS_COUNT - 2*(i+1); k++) cout << symbol;
+				is_top = false;
+			}
+			else
+				for(int k = 0; k < END_ROWS_COUNT - 2*(i+1); k++) cout << " ";
 			cout << symbol;
 			for(int k = 0; k < i; k++) cout << " "; 
 
