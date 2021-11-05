@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Naming test",
+      "setup": "g++ *3.cpp -o task3",
+      "run": "./task3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Output test",
+      "setup": "g++ *2.cpp -o task2",
+      "run": "./task2",
+      "input": "3",
+      "output": "4 3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
